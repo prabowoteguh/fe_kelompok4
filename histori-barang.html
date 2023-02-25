@@ -2,24 +2,19 @@
 <html lang="en">
 
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="fixed.js"></script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Data Barang</title>
+  <title>Histori</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="assets/js/histori.js"></script>
 
-
+ <section>
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <section>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -27,48 +22,27 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-
   <link href="assets/css/style.css" rel="stylesheet">
-  </section>
-</head>
 
+</head>
 <body>
 
-<section>
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="./assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Grosir.Four</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
 
-    <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      </form>
-    </div>
-
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li> 
-      </nav>
   </header>
-</section>w
 
+ 
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
-
-
 
       <li class="nav-item">
         <a class="nav-link collapsed"  href="Input Barang.html">
@@ -78,31 +52,29 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="data-barang.html">
+        <a class="nav-link collapsed" href="data-barang.html">
           <i class="bi bi-layout-text-window-reverse"></i>
           <span>Data Barang</span>
         </a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link collapsed" href="histori-barang.html">
           <i class="bi bi-layout-text-window-reverse"></i>
           <span>Histori Barang</span>
         </a>
-        </li>
-    </ul> 
+      </li>
+    </ul>
 
   </aside>
 
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Data Barang</h1>
+      <h1>Histori Barang Keluar</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Data Barang</li>
         </ol>
       </nav>
     </div>
@@ -113,23 +85,31 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Data Barang</h5>
+              <h5 class="card-title">Hisroti Barang</h5>
 
-             
+              
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama Barang</th>
-                    <th scope="col">Stock</th>
-                    <th scope="col">Harga</th>
-                    <th scope="col">Deskripsi</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Item ID</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Invoice Number</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Stok</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Description</th>
                   </tr>
                 </thead>
+
                 <tbody>
                 </tbody>
+                
               </table>
-          
+              
 
             </div>
           </div>
@@ -139,20 +119,9 @@
 
   </main>
 
-  
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span></span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      
-      Designed by <a href=""></a>
-    </div>
-  </footer>
-
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
+  <section>
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/chart.js/chart.umd.js"></script>
@@ -161,8 +130,9 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <script src="assets/js/main.js"></script>
+  </section>
+  
+  
 
 </body>
 

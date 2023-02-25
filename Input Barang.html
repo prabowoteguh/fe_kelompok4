@@ -3,11 +3,10 @@
 
 <head>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="fixed.js"></script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Data Barang</title>
+  <title>Forms</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -19,7 +18,7 @@
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <section>
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -28,13 +27,15 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
+
   <link href="assets/css/style.css" rel="stylesheet">
-  </section>
+
+
 </head>
 
 <body>
 
-<section>
+
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
@@ -60,25 +61,23 @@
             <i class="bi bi-search"></i>
           </a>
         </li> 
-      </nav>
+    </nav>
+
   </header>
-</section>w
+
 
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
-
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed"  href="Input Barang.html">
+    <li class="nav-item">
+        <a class="nav-link"  href="Input Barang.html">
           <i class="bi bi-journal-text"></i>
           <span>Input</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="data-barang.html">
+        <a class="nav-link collapsed" href="data-barang.html">
           <i class="bi bi-layout-text-window-reverse"></i>
           <span>Data Barang</span>
         </a>
@@ -89,70 +88,87 @@
           <i class="bi bi-layout-text-window-reverse"></i>
           <span>Histori Barang</span>
         </a>
-        </li>
-    </ul> 
+      </li>
+    </ul>
 
   </aside>
+
 
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Data Barang</h1>
+      <h1>Form Input</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Data Barang</li>
+          <li class="breadcrumb-item">Forms</li>
+          <li class="breadcrumb-item active">Input</li>
         </ol>
       </nav>
     </div>
 
     <section class="section">
       <div class="row">
-        <div class="col-lg-12">
-
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Data Barang</h5>
+              <h5 class="card-title">Data Input Barang</h5>
 
-             
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama Barang</th>
-                    <th scope="col">Stock</th>
-                    <th scope="col">Harga</th>
-                    <th scope="col">Deskripsi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-          
+            
+              <form>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-sm-2 col-form-label">Nama Barang</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputNumber" class="col-sm-2 col-form-label">Stock</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputNumber" class="col-sm-2 col-form-label">Harga</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-sm-2 col-form-label">Deskripsi</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-sm-2 col-form-label">Gambar</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                </div>
+            </div>
+                
+                <div class="row mb-3">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+
+              </form>
 
             </div>
           </div>
+
         </div>
-      </div>
+
+        
     </section>
 
   </main>
-
   
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span></span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      
-      Designed by <a href=""></a>
-    </div>
-  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
+ 
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/chart.js/chart.umd.js"></script>
@@ -161,6 +177,7 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
   <script src="assets/js/main.js"></script>
 
