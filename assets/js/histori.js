@@ -5,7 +5,7 @@ const getdataHistories = () => {
     .then((result) => {
       const tableBody = document.querySelector('#tablehistory tbody');
       let angkaMulai = 0;
-      result.data.forEach((item) => { 
+      result.forEach((item) => { 
         var newRow = document.createElement('tr');
 
         var column1 = document.createElement('td');
