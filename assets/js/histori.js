@@ -5,7 +5,7 @@ const getdataHistories = () => {
   axios.get('https://api-kelompok4.prabowolabs.com/api/dataHistories')
     .then((response) => { 
       const datas = response.data.result;
-      console.log(datas);
+      // console.log(datas);
 
       const tableBody = document.querySelector('tbody');
       let angkaMulai = 0;
