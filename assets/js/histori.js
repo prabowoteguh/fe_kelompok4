@@ -1,14 +1,17 @@
-const API_HISTORI = "https://api-kelompok4.prabowolabs.com/api/dataHistories";
-const datas = response.body;
+
+
 const getdataHistories = () => {
 
-  axios.get(API_HISTORI)
-    .then((response) => {
+  axios.get('https://api-kelompok4.prabowolabs.com/api/dataHistories')
+    .then((response) => { 
+      const datas = response.data.result;
+      console.log(datas);
 
-      const tableBody = document.querySelector('#tablehistory tbody');
+      const tableBody = document.querySelector('tbody');
       let angkaMulai = 0;
 
-      datas.forEach((item) => { 
+      datas.forEach ((item)=> {
+
         var newRow = document.createElement('tr');
 
         var column1 = document.createElement('th');
